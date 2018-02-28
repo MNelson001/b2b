@@ -6,9 +6,9 @@ CURRENT FE STATUS:
 
 Home section front end (100%) (X)
 
-About section front end (80%) ( )
+About section front end (100%) (X)
 
-Gallery section front end (0%) ( )
+Gallery section front end (10%) ( )
 
 \Services section fron end (0%) ( )
 
