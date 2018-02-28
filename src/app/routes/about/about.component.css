@@ -202,22 +202,31 @@ h1 {
 .connector {
   position: absolute;
   top: 100%;
-  height: 100%;
+  height: 180%;
   width: 30%;
   background: rgba(0,177,149,0.5);
 }
 
 /* ===============================================================
-                  F A M I L Y   S E C T I O NS
+                  F A M I L Y   S E C T I O N
 ================================================================*/
 
 #me {
-  height: 100%;
+  height: 80%;
   width: 100%;
+  background: #f6efe5;
+}
+
+svg {
+  width: 80%;
+  position: absolute;
+  padding-top: 18%;
+  z-index: 1;
+  stroke: #00b195;
 }
 
 .my-life {
-  height: 50%;
+  height: 60%;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -232,6 +241,10 @@ h1 {
   background: #00b195;
   overflow: hidden;
   z-index: 1;
+}
+
+.the-team-header {
+  display: none;
 }
 
 .the-team .top {
@@ -261,12 +274,84 @@ h1 {
   top: -30px;
 }
 
+.the-team .bottom p{
+  color: #f5f5f5;
+  font-family: 'pompiere', cursive;
+  font-size: 1.4em;
+  text-align: center;
+}
+
+.bio-part-2 {
+  position: relative;
+  margin-top: 60px;
+  top: 10%;
+}
+
+.bio-part-2 p {
+  float: right;
+  width: 50%;
+  padding: 20px;
+  background: #194769;
+  color: #f5f5f5;
+  font-size: 1.5em;
+  font-family: 'pompiere', cursive;
+  text-align: center;
+}
+
+/* FOOTER SECTION */
+
+#footer {
+  border-top: 4px solid #194769;
+  height: 50%;
+  width: 100%;
+  background-image: url('../../../assets/cb.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.footer-contents {
+  padding-top: 7%;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  flex-basis: 0;
+  color: #f5f5f5;
+}
+
+.footer-section h4 {
+  font-family: 'kranky', cursive;
+}
+
+.footer-section p {
+  font-family: 'pompiere', cursive;
+  font-size: 1.7em;
+}
+
+.footer-section a {
+  line-height: 1em;
+}
 
 /* ===============================================================
                   M E D I A     Q U E R I E S
 ================================================================*/
 
 @media screen and (max-width: 575px){
+
+  svg { 
+    display: none;
+  }
 
   /* HOME SECTION */
   #header {
@@ -362,80 +447,431 @@ h1 {
     background: unset;
   }
 
+
+  /* FAMILY SECTION */
   #me {
-    height: 100%;
+    height: auto;
   }
 
   .my-life {
+    padding: 10%;
     height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
-    flex-basis: 0;
     justify-content: center;
     align-items: center;
   }
 
+  .the-team {
+    width: 100%;
+  }
+
+  .the-team-header {
+    display: unset;
+    font-family: 'Kranky', cursive;
+  }
+
+  .the-team .top {
+    padding-top: 6px;
+  }
+
+  .the-team .top h5 {
+    padding: 0;
+  }
+
+  .the-team .bottom i {
+    display: none;
+  }
+
+  .the-team .bottom p {
+    padding-top: 10px;
+  }
+
+  .bio-part-2 {
+    position: unset;
+    margin: 0
+  }
+
+  .bio-part-2 p {
+    float: unset;
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+  }
+
+  /* FOOTER SECTION */
+
+  #footer {
+    border-top: 4px solid #194769;
+    height: 50%;
+    width: 100%;
+    background-image: url('../../../assets/cb.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  .footer-contents {
+    padding-top: 7%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: unset;
+    flex-basis: unset;
+    color: #f5f5f5;
+  }
+  
+  .footer-section h4 {
+    font-family: 'kranky', cursive;
+  }
+  
+  .footer-section p {
+    font-family: 'pompiere', cursive;
+    font-size: 1.7em;
+  }
+  
+  .footer-section a {
+    line-height: 1em;
+  }
 }
 
 @media screen and (min-width: 576px) and (max-width: 767px){
 
+
+  /* ABOUT PAGE */
+  
+  .bio-part-1 {
+    text-align: center;
+    height: 20%;
+    position: unset;
+    padding: 5% 5% 10% 5%;
+    width: 100%;
+  }
+
+  .append-sbd {
+    display: none;
+  }
+
+  .location-image-and-contact {
+    height: 50%;
+    width: 100%;
+    background-image: url('../../../assets/carousel2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .location {
+    display: none;
+  }
+
+  .contact {
+    text-align: center;
+    color: #f5f5f5;
+    font-size: 2em;
+    height: unset;
+    width: unset;
+    background: unset;
+  }
+
+  /* FAMILY SECTION */
+  #me {
+    height: auto;
+  }
+
+  .my-life {
+    padding: 10%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .the-team {
+    width: 100%;
+  }
+
+  .the-team-header {
+    display: unset;
+    font-family: 'Kranky', cursive;
+  }
+
+  .the-team .top {
+    padding-top: 6px;
+  }
+
+  .the-team .top h5 {
+    padding: 0;
+  }
+
+  .the-team .bottom i {
+    display: none;
+  }
+
+  .the-team .bottom p {
+    padding-top: 10px;
+  }
+
+  .bio-part-2 {
+    position: unset;
+    margin: 0
+  }
+
+  .bio-part-2 p {
+    float: unset;
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+  }
+
+  /* FOOTER SECTION */
+  .footer-contents {
+    flex-direction: row;
+    width: 100%;
+  }
+
 }
 
+@media screen and (min-width: 768px) and (max-width: 991px) {
 
+    svg {
+      display: none;
+    }
+    /* ABOUT PAGE */
 
+    #bio {
+      height: 60%;
+    }
+  
+    .bio-part-1 {
+      text-align: center;
+      height: auto;
+      position: unset;
+      padding: 5% 5% 10% 5%;
+      width: 100%;
+    }
+  
+    .append-sbd {
+      display: none;
+    }
+  
+    .location-image-and-contact {
+      height: 50%;
+      width: 100%;
+      background-image: url('../../../assets/carousel2.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .gregory-image {
+      display: none;
+    }
+    .location {
+      display: none;
+    }
+  
+    .contact {
+      text-align: center;
+      color: #f5f5f5;
+      font-size: 2em;
+      height: unset;
+      width: unset;
+      background: unset;
+    }
+  
+    /* FAMILY SECTION */
+    #me {
+      height: auto;
+    }
+  
+    .my-life {
+      padding: 3% 7%;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .the-team {
+      width: 100%;
+    }
+  
+    .the-team-header {
+      display: unset;
+      font-family: 'Kranky', cursive;
+    }
+  
+    .the-team .top {
+      padding-top: 6px;
+    }
+  
+    .the-team .top h5 {
+      padding: 0;
+    }
+  
+    .the-team .bottom i {
+      display: none;
+    }
+  
+    .the-team .bottom p {
+      padding-top: 10px;
+    }
+  
+    .bio-part-2 {
+      position: unset;
+      margin: 0
+    }
+  
+    .bio-part-2 p {
+      float: unset;
+      width: 100%;
+      padding: 20px;
+      margin: 0;
+    }
+  
+    /* FOOTER SECTION */
+    #footer {
+      height: auto;
+      padding-bottom: 20px;
+    }
 
-/* #about-profile1 {
-  height: 100%;
-  background-image: element('#info-box2');
-  background-attachment: fixed;
+    .footer-contents {
+      flex-direction: row;
+      width: 100%;
+    }
 }
 
-.cover-shape {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+  #me {
+    height: 50%;
+  }
+  .bio-part-2 {
+    top: 5vh;
+    height: auto;
+  }
+
+  .bio-part-2 p {
+    margin: 0;
+    font-size: 1.2em;
+  }
+  svg {
+    width: 80%;
+    position: absolute;
+    padding-top: 30vh;
+    z-index: 1;
+    stroke: #00b195;
+  }
+
+  .connector {
+    height: 155%;
+  }
+
+  .the-team {
+    height: 30vh;
+  }
+
+  .the-team .bottom i {
+    background: #f5f5f5;
+    padding: 6px;
+    border: 3px solid #00b195;
+    border-radius: 50%;
+    position: relative;
+    left: 30%;
+    top: -30px;
+  }
+
+  #footer {
+    padding-bottom: 20px;
+    height: auto;
+  }
+  
 }
 
-polyline {
-  z-index: 1;
-}
-.info-boxes {
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
+@media screen and (min-width: 1200px) and (max-width: 1366px) {
+
+  #me {
+    height: 60%;
+  }
+
+  .the-team {
+    height: 40vh;
+  }
+
+  .bio-part-1 {
+    padding-top: 1em;
+    font-size: 1.6em;
+  }
+  .contact {
+    height: 20vh;
+  }
+
+  .bio-part-2 {
+    top: 10vh;
+  }
+
+  .bio-part-2 p {
+    font-size: 1.4em;
+  }
+
+  .path-down {
+    left: 13.5vw;
+    top: 235vh;
+    height: 30vh;
+  }
+
+  #footer {
+    height: auto;
+    padding-bottom: 20px;
+  }
 }
 
-#info-box1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 30%;
-  z-index: 1;
-}
+@media screen and (min-width: 1367px) and (max-width: 1557px) {
 
-#info-box1 img {
-  border-radius: 50%;
-  width: 75%;
-  border: 2px solid #00b195;
-}
+  svg {
+    padding-top: 35vh;
+  }
 
-#info-box2 {
-  position: fixed;
-  right: 50px;;
-  top: 20%;
-  height: 75%;
-  width: 50%;
-  background: #00b195;
-  z-index: -1;
-}
+  .connector {
+    height: 230%;
+  }
 
-#about-profile2 {
-  height: 100%;
-  background: #ffffff;
-} */
+  .bio-part-1 {
+    font-size: 1.8em;
+  }
+
+  .bio-part-2 p {
+    font-size: 2.2em;
+  }
+
+  #footer {
+    height: auto;
+    padding-bottom: 20px;
+  }
+}
