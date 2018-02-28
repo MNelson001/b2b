@@ -1,0 +1,441 @@
+.contact-btn {
+  font-family: 'Pompiere', cursive;
+  background: transparent;
+  border: 3px solid #00b195;
+  padding: 0 0.3em;
+  color: #f5f5f5;
+}
+
+img {
+  width: 50%;
+}
+
+
+h1 {
+  font-family: 'kranky', cursive;
+  color: #f5f5f5;
+  font-weight: bold;
+  padding-left: 20px;
+  letter-spacing: 2.5px;
+}
+
+
+/* ========================================================
+                      HEADER SECTION 
+======================================================== */
+
+/* CONTAINER 1 */
+
+#header {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-box {
+  height: 100%;
+  width: 40%;
+  background: #194769;
+  display: flex;
+}
+
+.header-with-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100%;
+  background: #00b195;
+}
+
+.stretch-box-up {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  background: #00587a;
+}
+
+/* CONTAINER 2 */
+
+.page-title-and-icons {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-title {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  background-image: url('../../../assets/cb.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* CONTAINER 3 */
+
+.icons {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+
+.stretch-box-down {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+  height: 100%;
+  background: #00587a;
+  align-self: flex-end;
+}
+
+.inner-box {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 34%;
+  height: 100%;
+  align-self: flex-end;
+  background: #373c42;
+}
+
+/* ========================================================
+                      PART 1 BIO SECTION
+======================================================== */
+
+
+#bio {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  background: #f6efe5;
+}
+
+.bio-part-1 {
+  position: absolute;
+  padding-top: 6%;
+  font-family: 'pompiere', cursive;
+  font-size: 1.3em;
+  left: 10%;
+  right: 50%;
+}
+
+.gregory-image {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 50%;
+}
+
+.append-sbd {
+  width: 32.75%;
+  height: 100%;
+  background: rgba(0,88,122,0.5);
+}
+
+.location-image-and-contact {
+  height: 50%;
+  width: 60%;
+  background-image: url('../../../assets/carousel3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.location {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  color: #f5f5f5;
+  font-family: 'pompiere', cursive;
+  font-size: 1.3em;
+  left: 50px;
+  margin-top: 2%;
+  width: 30%;
+  height: 40%;
+  background: #00587a;
+}
+
+.location img {
+  height: 30%;
+}
+
+.contact {
+  text-align: center;
+  color: #f5f5f5;
+  font-family: 'Pompiere', cursive;
+  font-size: 2em;
+  height: 40%;
+  width: 33%;
+  background: rgba(0,88,122,0.5);
+}
+
+.connector {
+  position: absolute;
+  top: 100%;
+  height: 100%;
+  width: 30%;
+  background: rgba(0,177,149,0.5);
+}
+
+/* ===============================================================
+                  F A M I L Y   S E C T I O NS
+================================================================*/
+
+#me {
+  height: 100%;
+  width: 100%;
+}
+
+.my-life {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 45px 50px 0 57px;
+}
+
+.the-team {
+  height: 100%;
+  width: 15%;
+  background: #00b195;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.the-team .top {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 45%;
+  width: 100%;
+  background: #373c42;
+  padding-top: 15px;
+}
+
+.the-team .top h5 {
+  font-family: "pompiere", cursive;
+  color: #f5f5f5;
+  text-align: center;
+}
+
+.the-team .bottom i {
+  background: #f5f5f5;
+  padding: 6px;
+  border: 3px solid #00b195;
+  border-radius: 50%;
+  position: relative;
+  left: 35%;
+  top: -30px;
+}
+
+
+/* ===============================================================
+                  M E D I A     Q U E R I E S
+================================================================*/
+
+@media screen and (max-width: 575px){
+
+  /* HOME SECTION */
+  #header {
+    flex-direction: column;
+  }
+  
+  .header-box {
+    height: 100%;
+    width: 100%;
+    display: flex;
+  }
+  
+  .header-with-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+  }
+
+  .page-title-and-icons{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .stretch-box-up {
+    padding-top: 15%;
+    padding-left: 5%;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 100%;
+    background: #0f3057;
+  }
+
+  /* ABOUT PAGE */
+  
+  #bio {
+    height: 100%;
+    display: flex;
+
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+  
+  .bio-part-1 {
+    height: 20%;
+    position: unset;
+    padding: 10%;
+    width: 100%;
+  }
+
+  .gregory-image {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    height: 50%;
+  }
+
+  .append-sbd {
+    display: none;
+  }
+
+  .location-image-and-contact {
+    height: 50%;
+    width: 100%;
+    background-image: url('../../../assets/carousel2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .location {
+    display: none;
+  }
+
+  .contact {
+    text-align: center;
+    color: #f5f5f5;
+    font-family: 'Pompiere', cursive;
+    font-size: 2em;
+    height: unset;
+    width: unset;
+    background: unset;
+  }
+
+  #me {
+    height: 100%;
+  }
+
+  .my-life {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px){
+
+}
+
+
+
+
+/* #about-profile1 {
+  height: 100%;
+  background-image: element('#info-box2');
+  background-attachment: fixed;
+}
+
+.cover-shape {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+polyline {
+  z-index: 1;
+}
+.info-boxes {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#info-box1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 30%;
+  z-index: 1;
+}
+
+#info-box1 img {
+  border-radius: 50%;
+  width: 75%;
+  border: 2px solid #00b195;
+}
+
+#info-box2 {
+  position: fixed;
+  right: 50px;;
+  top: 20%;
+  height: 75%;
+  width: 50%;
+  background: #00b195;
+  z-index: -1;
+}
+
+#about-profile2 {
+  height: 100%;
+  background: #ffffff;
+} */

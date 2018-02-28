@@ -1,0 +1,13 @@
+#logo {
+  width: 50%;
+}
+
+li .nav-link {
+  font-family: 'Pompiere', cursive;
+  color: #00b195;
+}
+
+li .nav-link:hover {
+  color: #f5f5f5;
+  background-color: #00b195; 
+}
