@@ -220,9 +220,9 @@ h1 {
 svg {
   width: 80%;
   position: absolute;
-  padding-top: 18%;
+  padding-top: 13%;
   z-index: 1;
-  stroke: #00b195;
+  stroke: rgba(0,177,149,0.5);
 }
 
 .my-life {

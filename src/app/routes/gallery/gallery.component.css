@@ -1,0 +1,59 @@
+#gallery {
+  height: 100%;
+  background-image: url('../../../assets/Kitchen.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.background {
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+}
+
+.header {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header h1 {
+  color: #f5f5f5;
+  font-weight: bold;
+  font-family: 'kranky', cursive;
+  font-size: 4em;
+  margin: 0;
+}
+
+.underline {
+  margin-bottom: 12px;
+  height: 7px;
+  width: 50px;
+  background: #00b195;
+}
+
+.categories {
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+button {
+  margin: 0 2.5%;
+  background: transparent;
+  border: 3px solid #194769;
+}
+
+button a {
+  color: #f5f5f5;
+  font-family: 'pompiere', cursive;
+  text-decoration: none;
+}
+
+button:hover {
+  background: #194769;
+}
