@@ -1,27 +1,29 @@
 # B2b
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
+Website created for Budget2Beautiful designs.
 
-## Development server
+-------- CURRENT FE STATUS --------
+Home section front end (100%) (X)
+About section front end (80%) ( )
+Gallery section front end (0%) ( )
+Services section fron end (0%) ( )
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+------- CURRENT BE STATUS---------
+Home section back end (0%) ( )
+About section back end (0%) ( )
+Gallery section back end (0%) ( )
+Services section back end (0%) ( )
 
-## Code scaffolding
+--------- THE FUTURE ------------
+Create login page for admin and users ( )
+Create and implement Python script to query MLS ( )
+Utilize GC Storage and Database to get familiar ( )
+Deploy to Google Cloud Platform App Engine. ( )
+Try not to give up on the endless hell that is developing a website for my significant other. ( )
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Angular 5
+Bootstrap 4 -> (Possible transition to Angular Material / Angular FlexBox)
+Node (Not yet implemented)
+Express (Not yet implemented) 
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
