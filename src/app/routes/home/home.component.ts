@@ -21,31 +21,33 @@ export class HomeComponent implements OnInit {
    }
 
   ngOnInit() {
+
   }
 
-  createForm(){
+  createForm( ){
+
     this.form = this.fb.group({
       name: [ '', Validators.required ],
       email: [ '', Validators.required ],
       phone: [ '' ],
       message: [ '' ]
     });
+
   }
 
   onSubmit() {
     const { name, email, phone, message } = this.form.value;
     const date = Date();
-    const html = `
-      <div>From: ${name}</div>
-      <div>Email: <a href="mailto:${email}">$[email]]</a></div>
-      <div>Phone Number: 
+    const html = 
+     `<div>From: ${name}</div>
+      <div>Email: <a href="mailto:${email}">${email}</a></div>
+      <div>Phone Number:</div> 
       <div>Date: ${date}</div>
-      <div>Message: ${message}</div>
-    `;
-    let formRequest = { name, email, phone, message, date, html };
-    
+      <div>Message: ${message}</div>`;
+    const formRequest = { name, email, phone, message, date, html };
     this.af.collection('/messages').add(formRequest);
     this.form.reset();
+
   }
 
 }
