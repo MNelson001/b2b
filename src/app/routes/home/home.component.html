@@ -74,27 +74,27 @@
   </div>
   <div id="form-container">
     <h3>Get in Touch</h3>
-    <form id="contact-form">
+    <form id="contact-form" [formGroup]="form" (ngSubmit)="onSubmit()">
       <div class="form-row">
         <div class="col-md-6 mb-3">
           <label for="name">Name</label>
-          <input type="text" class="form-control" id="name-field" placeholder="Full Name" required>
+          <input type="text" class="form-control" id="name-field" placeholder="Full Name" formControlName="name">
         </div>
         <div class="col-md-6 mb-3">
           <label for="email">Email</label>
-          <input type="email" class="form-control" id="email-field" placeholder="Eamil Address" required>
+          <input type="email" class="form-control" id="email-field" placeholder="Eamil Address" formControlName="email">
         </div>
       </div>
       <div class="form-row">
         <div class="col-md-12 mb-3">
           <label for="phone number">Phone Number</label>
-          <input type="text" class="form-control" id="phone-field" placeholder="Phone Number (Optional)">
+          <input type="text" class="form-control" id="phone-field" placeholder="Phone Number (Optional)" formControlName="phone" >
         </div>
       </div>
       <div class="form-row">
         <div class="col-md-12 mb-3">
           <label for="message">Message</label>
-          <textarea class="form-control" id="message-field" rows="3" placeholder="What can I help you with?"></textarea>
+          <textarea class="form-control" id="message-field" rows="3" placeholder="What can I help you with?" formControlName="message"></textarea>
         </div>
       </div>
       <button type="submit" class="col-md-12 btn btn-lg contact-btn">Submit</button>
