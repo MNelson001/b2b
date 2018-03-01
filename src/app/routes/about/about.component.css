@@ -595,6 +595,9 @@ svg {
     height: auto;
   }
 
+  svg {
+    display: none;
+  }
   .my-life {
     padding: 10%;
     height: 100%;
@@ -786,7 +789,7 @@ svg {
     position: absolute;
     padding-top: 30vh;
     z-index: 1;
-    stroke: #00b195;
+    stroke: rgba(0,177,149,0.5);
   }
 
   .connector {

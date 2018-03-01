@@ -9,17 +9,19 @@ export class CompletedHomesGalleryComponent implements OnInit {
 
   public images: Array<string> = [
 
-  ]
+  ];
 
   popup_link: string;
 
-  constructor() { }
+  constructor() {
+
+  }
 
   ngOnInit() {
   }
 
   assignUrl(id){
     this.popup_link = id;
-  }
+  };
 
 }

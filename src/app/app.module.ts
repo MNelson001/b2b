@@ -25,7 +25,7 @@ const ROUTES: Routes = [
   { path: 'completed_homes_gallery', component: CompletedHomesGalleryComponent },
   { path: 'current_homes_gallery', component: CurrentHomesGalleryComponent },
   { path: 'services', component: ServicesComponent }
-]
+];
 
 @NgModule({
   declarations: [
