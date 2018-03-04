@@ -6,7 +6,7 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: 'AIzaSyDzDd_bA8yf3TUjLaFCGGv0yv9KXWWSPq4',
+    apiKey: process.env.FIREBASE_API_KEY,
     authDomain: 'b2b-firebase-eb256.firebaseapp.com',
     databaseURL: 'https://b2b-firebase-eb256.firebaseio.com',
     projectId: 'b2b-firebase-eb256',
