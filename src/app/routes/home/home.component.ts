@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { HttpClient, HttpParams, HttpHeaders } from '@angular/common/http';
 
 // firebase imports: TODO -> Move to service
 import { AngularFireModule } from 'angularfire2';
@@ -14,38 +15,33 @@ export class HomeComponent implements OnInit {
   form: FormGroup;
 
   constructor(
-    private fb: FormBuilder,
-    private af: AngularFirestore
-  ) {
-    this.createForm();
-   }
+    private af: AngularFirestore,
+    private http: HttpClient
+  ) {   }
 
   ngOnInit() {
-
-  }
-
-  createForm( ){
-
-    this.form = this.fb.group({
-      name: [ '', Validators.required ],
-      email: [ '', Validators.required ],
-      phone: [ '' ],
-      message: [ '' ]
+    this.form = new FormGroup({
+      name: new FormControl(),
+      email: new FormControl(),
+      phone: new FormControl(),
+      message: new FormControl()
     });
-
   }
 
+  
   onSubmit() {
-    const { name, email, phone, message } = this.form.value;
-    const date = Date();
-    const html = 
-     `<div>From: ${name}</div>
-      <div>Email: <a href="mailto:${email}">${email}</a></div>
-      <div>Phone Number:</div> 
-      <div>Date: ${date}</div>
-      <div>Message: ${message}</div>`;
-    const formRequest = { name, email, phone, message, date, html };
-    this.af.collection('/messages').add(formRequest);
+    let url = 'https://us-central1-b2b-firebase-eb256.cloudfunctions.net/sendContactMessage';
+    this.http.post(url, {
+      name: this.form.value.name,
+      email: this.form.value.email,
+      phone: this.form.value.phone,
+      message: this.form.value.message,
+      date: Date()
+    }).subscribe( res => {
+      console.log(res);
+    }, err => {
+      console.log(err);
+    })
     this.form.reset();
 
   }

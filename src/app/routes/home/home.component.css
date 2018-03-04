@@ -503,17 +503,40 @@ section {
 
       /* SMALL ABOUT SECTION */
       .parallax-bg {
-        border-right: 100px solid #00b195;
+        background-image: url('../../../assets/carousel1.jpg');
+        position: fixed;
+        background-size: unset;
+        background-repeat: unset;
+        background-position: unset;
+        background-attachment: unset;
+        border-right: unset;
+      }
+    
+      .parallax-bg h1 {
+        font-size: 1em;
+        font-weight: bold;
+      }
+    
+      #prof-pic {
+        width: 20%;
+      }
+    
+      #sm-about {
+        background-image: url('../../../assets/carousel1.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100%;
       }
       
       #sm-about-content-box {
+        background: rgba(0, 0, 0, 0.75);
+        height: 100%;
         padding-top: 2em;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-      }
-      
+      } 
       #sm-about-content-box h1 {
         font-size: 1.3em;
         text-align: center;

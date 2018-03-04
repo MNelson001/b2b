@@ -13,7 +13,9 @@
   "dependencies": {
     "firebase-admin": "~5.8.1",
     "firebase-functions": "^0.8.1",
-    "node-mailjet": "^3.2.1"
+    "express": "^4.16.2",
+    "cors": "^2.8.4",
+    "gmail-node": "^1.2.0"
   },
   "devDependencies": {
     "tslint": "^5.8.0",
