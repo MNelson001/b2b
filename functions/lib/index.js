@@ -12,14 +12,14 @@ const cors = require('cors')({ origin: "*" });
 const gNode = require('gmail-node');
 const app = express();
 const st = {
-    access_token: "ya29.GltyBbwklT6aosi_ke8JwDPBkjdJkpHaYzXecXxk0otmwB35EvJR1xTlNvUCxCYnERiv-Kue3-n8evWbF_k-7auFw31OwGQTjWui8u8G-imp3-QgnUSwBKtPAl4g",
-    refresh_token: "1/b53BV28huICUcva_XFWByUv8qFfMOoDmrPJuuLQgpno",
+    access_token: functions.config().gapi.at,
+    refresh_token: functions.config().gapi.rt,
     token_type: "Bearer",
-    expiry_date: 1520019374269
+    expiry_date: 1520209939367
 };
 const cs = {
     installed: {
-        client_id: "459961063352-eftqjmc4r9l48dgatnem41unc2jkn19q.apps.googleusercontent.com",
+        client_id: functions.config().gapi.id,
         project_id: "b2b-firebase-eb256",
         auth_uri: "https://accounts.google.com/o/oauth2/auth",
         token_uri: "https://accounts.google.com/o/oauth2/token",
