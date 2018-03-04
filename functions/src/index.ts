@@ -14,26 +14,27 @@ const app = express()
 
 
 const st = {
-  access_token: process.env.GAPI_AT,
-  refresh_token: process.env.GAPI_RT,
-  token_type: "Bearer",
-  expiry_date: 1520019374269
+  access_token: functions.config().gapi.at,
+  refresh_token: functions.config().gapi.rt,
+  token_type:"Bearer",
+  expiry_date:1520209939367
 }
 
+
+
 const cs = {
-  installed:
-    {
-      client_id: process.env.GAPI_ID,
-      project_id: "b2b-firebase-eb256",
-      auth_uri: "https://accounts.google.com/o/oauth2/auth",
-      token_uri: "https://accounts.google.com/o/oauth2/token",
-      auth_provider_x509_cert_url: "https://www.googleapis.com/oauth2/v1/certs",
-      client_secret: "3mROTG3oUytjd3n707LXQWuL",
-      redirect_uris: [
-        "urn:ietf:wg:oauth:2.0:oob",
-        "http://localhost"
-      ]
-    }
+  installed: {
+    client_id: functions.config().gapi.id,
+    project_id:"b2b-firebase-eb256",
+    auth_uri:"https://accounts.google.com/o/oauth2/auth",
+    token_uri:"https://accounts.google.com/o/oauth2/token",
+    auth_provider_x509_cert_url:"https://www.googleapis.com/oauth2/v1/certs",
+    client_secret:"3mROTG3oUytjd3n707LXQWuL",
+    redirect_uris: [
+      "urn:ietf:wg:oauth:2.0:oob",
+      "http://localhost"
+    ]
+  }
 }
 
 exports.sendContactMessage =
