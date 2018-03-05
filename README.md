@@ -20,11 +20,11 @@ Home section back end (100%) (X)
   - Sends an http request to firebase function to send email to gmail account
   - No 3rd parties used, SUCK IT STACK OVERFLOW.
   
-About section back end ~~(0%) ( )~~ Not Necessary at this point.
+~~About section back end (0%) ( )~~ Not Necessary at this point.
 
-Gallery section back end ~~(0%) ( )~~ Not Necessary at this point.
+~~Gallery section back end ~~(0%) ( )~~ Not Necessary at this point.
 
-Services section back end ~~(0%) ( )~~ Not Necessary at this point.
+~~Services section back end ~~(0%) ( )~~ Not Necessary at this point.
 
 THE FUTURE
 
@@ -35,6 +35,7 @@ Create and implement Python script to query MLS ( )
 Utilize GC Storage and Database to get familiar ( )
 
 ~~Deploy to Google Cloud Platform App Engine. ( )~~
+
 Deploy to Firebase because its cool (X)
   - Waiting on DNS issue to be resolved so domain https://budget2beautiful.com works.
 
