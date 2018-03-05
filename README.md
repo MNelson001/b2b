@@ -22,9 +22,9 @@ Home section back end (100%) (X)
   
 ~~About section back end (0%) ( )~~ Not Necessary at this point.
 
-~~Gallery section back end ~~(0%) ( )~~ Not Necessary at this point.
+~~Gallery section back end (0%) ( )~~ Not Necessary at this point.
 
-~~Services section back end ~~(0%) ( )~~ Not Necessary at this point.
+~~Services section back end (0%) ( )~~ Not Necessary at this point.
 
 THE FUTURE
 
