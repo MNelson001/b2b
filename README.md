@@ -8,19 +8,23 @@ Home section front end (100%) (X)
 
 About section front end (100%) (X)
 
-Gallery section front end (10%) ( )
+Gallery section front end (50%) ( )
 
-\Services section fron end (0%) ( )
+Services section fron end (100%) (X)
+  - While this is technically 'complete' it will definitely need more TLC.
 
 CURRENT BE STATUS
 
-Home section back end (0%) ( )
+Home section back end (100%) (X)
+  - Really the only section right now that requires any 'backend' work. 
+  - Sends an http request to firebase function to send email to gmail account
+  - No 3rd parties used, SUCK IT STACK OVERFLOW.
+  
+About section back end ~~(0%) ( )~~ Not Necessary at this point.
 
-About section back end (0%) ( )
+Gallery section back end ~~(0%) ( )~~ Not Necessary at this point.
 
-Gallery section back end (0%) ( )
-
-Services section back end (0%) ( )
+Services section back end ~~(0%) ( )~~ Not Necessary at this point.
 
 THE FUTURE
 
@@ -30,7 +34,9 @@ Create and implement Python script to query MLS ( )
 
 Utilize GC Storage and Database to get familiar ( )
 
-Deploy to Google Cloud Platform App Engine. ( )
+~~Deploy to Google Cloud Platform App Engine. ( )~~
+Deploy to Firebase because its cool (X)
+  - Waiting on DNS issue to be resolved so domain https://budget2beautiful.com works.
 
 Try not to give up on the endless hell that is developing a website for my significant other. ( )
 
