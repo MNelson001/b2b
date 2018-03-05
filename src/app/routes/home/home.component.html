@@ -5,7 +5,11 @@
       <div id="header-and-button">
         <h1 id="landing-header">
           <span>Grow</span> with your home.</h1>
-        <button class="btn btn-lg contact-btn">Contact Me</button>
+        <button class="btn btn-lg contact-btn">
+          <div routerLink="[]" fragment="contact">
+            <a href="#contact">Contact Me</a>
+          </div>
+        </button>
       </div>
       <div class="arrow-icon">
         <i class="fa fa-sort-down fa-3x"></i>
@@ -51,10 +55,11 @@
     <h1>Dedicated to Design</h1>
     <div class="underline"></div>
     <img id="prof-pic" src="../../../assets/profilepic.png" alt="">
-    <p>The love of interior decorating, and design, and quality construction resulted in {{'{'}}Budget 2 Beautiful
-      Designs{{'}'}}. <span>This company was built to provide creative quality to our customers. There's plenty of creative designers
-      and quality contractors, however Budget to Beautiful was founded on the
-      idea that the customer should have a design that's created with constructability and functionality in mind.</span></p>
+    <p>The love of interior decorating, and design, and quality construction resulted in {{'{'}}Budget 2 Beautiful Designs{{'}'}}.
+      <span>This company was built to provide creative quality to our customers. There's plenty of creative designers and quality
+        contractors, however Budget to Beautiful was founded on the idea that the customer should have a design that's created
+        with constructability and functionality in mind.</span>
+    </p>
   </div>
 </section>
 
@@ -62,15 +67,22 @@
   <div id="info-container">
     <img src="../../../assets/b2b.png" alt="logo">
     <p>
-        Budget2Beautiful designs est. 2014 under sole proprietorship, any use of materials i.e. website design, consultation
-        material, development strategies or anything contributing to the processes, goals and / or assets of Budget2Beautiful
-        are protected under copyright law and registered trademark.
+      Budget2Beautiful designs est. 2014 under sole proprietorship, any use of materials i.e. website design, consultation material,
+      development strategies or anything contributing to the processes, goals and / or assets of Budget2Beautiful are protected
+      under copyright law and registered trademark.
     </p>
     <ul>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Gallery</a></li>
+      <li>
+        <a routerLink="/about">About</a>
+      </li>
+      <li>
+        <a routerLink="/services">Services</a>
+      </li>
+      <li>
+        <a routerLink="/gallery">Gallery</a>
+      </li>
     </ul>
+    <a href="https://www.facebook.com/budget2beautifuldesigns/"><i class="fa fa-facebook-square fa-3x"></i></a>
   </div>
   <div id="form-container">
     <h3>Get in Touch</h3>
@@ -78,26 +90,27 @@
       <div class="form-row">
         <div class="col-md-6 mb-3">
           <label for="name">Name</label>
-          <input type="text" class="form-control" id="name-field" placeholder="Full Name" formControlName="name">
+          <input type="text" class="form-control" id="name-field" placeholder="Full Name" formControlName="name" required>
         </div>
         <div class="col-md-6 mb-3">
           <label for="email">Email</label>
-          <input type="email" class="form-control" id="email-field" placeholder="Eamil Address" formControlName="email">
+          <input type="email" class="form-control" id="email-field" placeholder="Email Address" formControlName="email" required>
         </div>
       </div>
       <div class="form-row">
         <div class="col-md-12 mb-3">
           <label for="phone number">Phone Number</label>
-          <input type="text" class="form-control" id="phone-field" placeholder="Phone Number (Optional)" formControlName="phone" >
+          <input type="text" class="form-control" id="phone-field" placeholder="Phone Number (Optional)" formControlName="phone">
         </div>
       </div>
       <div class="form-row">
         <div class="col-md-12 mb-3">
           <label for="message">Message</label>
-          <textarea class="form-control" id="message-field" rows="3" placeholder="What can I help you with?" formControlName="message"></textarea>
+          <textarea class="form-control" id="message-field" rows="3" placeholder="What can I help you with?" formControlName="message"
+            required></textarea>
         </div>
       </div>
-      <button type="submit" class="col-md-12 btn btn-lg contact-btn">Submit</button>
+      <button [disabled]="!form.valid" type="submit" class="col-md-12 btn btn-lg contact-btn">Submit</button>
     </form>
   </div>
 </section>
