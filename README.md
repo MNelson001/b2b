@@ -37,7 +37,7 @@ Utilize GC Storage and Database to get familiar ( )
 ~~Deploy to Google Cloud Platform App Engine. ( )~~
 
 Deploy to Firebase because its cool (X)
-  - Waiting on DNS issue to be resolved so domain https://budget2beautiful.com works.
+  - Can be visited at https://budget2beautiful.com
 
 Try not to give up on the endless hell that is developing a website for my significant other. ( )
 
