@@ -269,10 +269,11 @@ svg {
 }
 
 .the-team .bottom i {
-  background: #f5f5f5;
+  background: #373c42;
+  color: #f5f5f5;
   padding: 6px;
-  border: 3px solid #00b195;
-  border-radius: 50%;
+  border: 3px solid #373c42;
+  border-radius: 20%;
   position: relative;
   left: 35%;
   top: -30px;
@@ -805,13 +806,7 @@ svg {
   }
 
   .the-team .bottom i {
-    background: #f5f5f5;
-    padding: 6px;
-    border: 3px solid #00b195;
-    border-radius: 50%;
-    position: relative;
     left: 30%;
-    top: -30px;
   }
 
   #footer {
