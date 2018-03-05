@@ -20,14 +20,17 @@ export class HomeComponent implements OnInit {
   ) {   }
 
   ngOnInit() {
-    this.form = new FormGroup({
-      name: new FormControl(),
-      email: new FormControl(),
-      phone: new FormControl(),
-      message: new FormControl()
-    });
+    this.createForm();
   }
 
+  private createForm() {
+    this.form = new FormGroup({
+      name: new FormControl("", [Validators.required, Validators.minLength(3)]),
+      email: new FormControl("", [Validators.required, Validators.email]),
+      phone: new FormControl(),
+      message: new FormControl("", Validators.required)
+    });
+  }
   
   onSubmit() {
     let url = 'https://us-central1-b2b-firebase-eb256.cloudfunctions.net/sendContactMessage';
