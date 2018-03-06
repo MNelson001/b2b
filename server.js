@@ -1,3 +1,6 @@
+// This is specifically a test server in order to utilize new libraries from GCP / Firebase.
+// The application itself is on Firebase and does not require any backend code because its awesome.
+
 const express = require('express');
 const path = require('path');
 const http = require('http');
