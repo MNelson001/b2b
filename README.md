@@ -1,4 +1,6 @@
 # B2b
+THIS PROJECT IS NO LONGER BEING WORKED ON. PROGRESS HAS STOPPED AND IT WILL NOT BE COMPLETED. USE IS FOR DEMONSTRATION OF KNOWLEDGE ONLY. 
+
 
 Website created for Budget2Beautiful designs.
 
@@ -37,7 +39,7 @@ Utilize GC Storage and Database to get familiar ( )
 ~~Deploy to Google Cloud Platform App Engine. ( )~~
 
 Deploy to Firebase because its cool (X)
-  - Can be visited at https://budget2beautiful.com
+  ~~- Can be visited at https://budget2beautiful.com~~
 
 Try not to give up on the endless hell that is developing a website for my significant other. ( )
 
